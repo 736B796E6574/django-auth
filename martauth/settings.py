@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-ackt@f4)%g1!qjc@chx5=u=w#^0^=!qtxwaxw5fwro9iyvg!l^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['8000-736b796e6574-djangoauth-z55tnxbk1w6.ws-eu102.gitpod.io']
 
 
 # Application definition
@@ -120,7 +120,19 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/4.2/howto/static-files/
+
+STATIC_URL = '/static/'
+CSRF_TRUSTED_ORIGINS = ['https://8000-736b796e6574-djangoauth-z55tnxbk1w6.ws-eu102.gitpod.io']
+
+
+# The directory where static files will be collected for production deployment.
+# Set this to an appropriate path on your server when deploying to production.
+STATIC_ROOT = BASE_DIR / 'static'
+
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
