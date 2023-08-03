@@ -1,7 +1,7 @@
 
 from .forms import SignUpForm
 from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 
 def custom_login_view(request):
@@ -35,7 +35,7 @@ def loggedin_view(request):
 
 def logout_view(request):
     logout(request)
-    return redirect('loggedout')  # Replace 'home' with the URL name or path to redirect after logout
+    return redirect('login')  # Replace 'home' with the URL name or path to redirect after logout
 
 def loggedout_view(request):
     return render(request, 'loggedout.html')

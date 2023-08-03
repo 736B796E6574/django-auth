@@ -10,6 +10,6 @@ urlpatterns = [
     path('login/', custom_login_view, name='login'),
     path('signup/', signup_view, name='signup'),
     path('loggedin/', loggedin_view, name='loggedin'),
-    path('logout/', logout_view, name='logout'),
+    path('logoutting/', logout_view, name='logoutting'),
     path('loggedout/', loggedout_view, name='loggedout'),
 ]
