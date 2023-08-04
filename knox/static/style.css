@@ -157,4 +157,16 @@ input[type="submit"]:active {
 
 .test {
   background-color: salmon;
+  flex-direction: column;
+}
+
+.btn {
+  color: #181818;
+  background-color: antiquewhite;
+  font-size: 2rem;
+  padding: 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  margin-top: 15px;
+  text-align: center;
 }

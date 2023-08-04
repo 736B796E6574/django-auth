@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="{% static 'style.css' %}" />
   </head>
   <body class="test">
+    <h1>Welcome to Martauth -</h1>
     {% if user.is_authenticated %}
-    <h1>You are logged in as {{ user }}.</h1>
-    <a class="btn" href="{% url 'logoutting' %}">Logout</a>
+
+    <h2>You are logged in as {{ full_name }}.</h2>
+    <a href="{% url 'logoutting' %}">Logout</a>
     {% else %}
     <h1>You are not logged in.</h1>
-    <a class="btn" href="{% url 'login' %}">Login</a>
+    <a href="{% url 'login' %}">Login</a>
     {% endif %}
   </body>
 </html>
