@@ -170,3 +170,7 @@ input[type="submit"]:active {
   margin-top: 15px;
   text-align: center;
 }
+
+.link {
+  cursor: pointer;
+}
